@@ -1,0 +1,1 @@
+select co.CONTINENT, round(avg(c.POPULATION)-0.5) from CITY c,  COUNTRY co where c.COUNTRYCODE=co.CODE group by co.CONTINENT;
